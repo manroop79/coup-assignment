@@ -19,7 +19,7 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const baseStyles = `
     inline-flex items-center justify-center gap-2
-    text-[15px] font-medium
+    text-[14px] md:text-[15px] font-medium
     cursor-pointer
     transition-all duration-200 ease-out
     border-none no-underline

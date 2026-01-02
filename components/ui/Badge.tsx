@@ -14,9 +14,9 @@ export const Badge: React.FC<BadgeProps> = ({
   return (
     <div
       className={`
-        inline-flex items-center gap-2
+        inline-flex items-center gap-1.5 md:gap-2
         text-[#006FE8]
-        text-[13px] font-medium
+        text-[12px] md:text-[13px] font-medium
         shadow-sm
         ${className}
       `}
@@ -29,7 +29,7 @@ export const Badge: React.FC<BadgeProps> = ({
         borderRadius: '9999px'
       }}
     >
-      {icon && <span className="flex items-center">{icon}</span>}
+      {icon && <span className="flex items-center scale-95 md:scale-100">{icon}</span>}
       {children}
     </div>
   );
