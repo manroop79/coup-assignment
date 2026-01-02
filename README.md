@@ -11,7 +11,7 @@ A pixel-perfect, responsive landing page for Coup, an iMessage automation tool f
 - **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **UI Library**: React 19.2.3
 - **Image Optimization**: Next.js Image Component
-- **Deployment**: Vercel (Recommended)
+- **Deployment**: Vercel
 
 ---
 
@@ -254,27 +254,6 @@ All animations are pure CSS (no JavaScript animation libraries) for optimal perf
 
 ---
 
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub/GitLab/Bitbucket
-2. Import project in [Vercel](https://vercel.com/)
-3. Vercel auto-detects Next.js and deploys
-4. Your site is live! 🎉
-
-### Other Platforms
-
-```bash
-# Build the application
-npm run build
-
-# The output will be in the .next folder
-# Deploy the .next folder to your hosting platform
-```
-
----
-
 ## 🎨 Assets & Credits
 
 ### Images
@@ -306,22 +285,6 @@ This project uses Tailwind CSS v4, which has a different setup than v3:
 
 ---
 
-## 🐛 Known Issues & Solutions
-
-### Issue: Tailwind classes not applying
-**Solution**: Some Tailwind classes may not work due to v4 differences. Use inline styles as a fallback:
-```tsx
-style={{ paddingLeft: '24px', paddingRight: '24px' }}
-```
-
-### Issue: Images not loading
-**Solution**: Ensure all images are in the `public/` folder and referenced with `/` prefix:
-```tsx
-<Image src="/coup.png" alt="Logo" />
-```
-
----
-
 ## 📝 Implementation Notes
 
 ### Design Accuracy
@@ -340,31 +303,6 @@ style={{ paddingLeft: '24px', paddingRight: '24px' }}
 - Component-based architecture for reusability
 - Clear folder structure for maintainability
 - Comments for complex logic
-
----
-
-## 👥 Contributing
-
-This is a frontend implementation assignment. For production use:
-
-1. Add environment variables for API endpoints
-2. Implement actual form submissions
-3. Add analytics tracking
-4. Configure SEO metadata
-5. Add more pages (Pricing, FAQ, etc.)
-6. Implement proper routing
-
----
-
-## 📄 License
-
-This project is private and proprietary.
-
----
-
-## 📞 Support
-
-For questions or issues, please contact the development team.
 
 ---
 
